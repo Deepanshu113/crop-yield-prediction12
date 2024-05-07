@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Prediction - Revolutionizing Agriculture</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero {
+            background-image: url('img4.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            
+        }
+    
+    
+        .slider {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            transition: transform 1s;
+        }
+        .slide {
+            width: 100%;
+        }
+        .about {
+            padding: 50px 0;
+            text-align: center;
+            color: black;
+        }
+        .services {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .contact {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .small-boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .small-box {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Crop Yield Prediction</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>CROP YIELD PREDICTION AND <br> PREDICTION</h2>
+            <h4>Get Informed Decisions About Farming Strategy </h4>
+        </div>
+    </section>
+
+   
+
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated to revolutionizing agriculture by leveraging advanced technology and data-driven insights. Our team of experts is committed to providing innovative solutions that optimize crop yield and sustainability.</p>
+        </div>
+  
+    <!-- Three small boxes related to crop yield -->
+    <div class="container">
+        <div class="small-boxes">
+            <div class="small-box">
+                <h3>Yield Prediction</h3>
+                <p>Utilize our advanced algorithms to accurately predict crop yields based on historical data and environmental factors.</p>
+            </div>
+            <div class="small-box">
+                <h3>Soil Health Analysis</h3>
+                <p>Assess the health of your soil and optimize nutrient management strategies to enhance crop productivity and sustainability.</p>
+            </div>
+            <div class="small-box">
+                <h3>Weather Forecasting</h3>
+                <p>Stay ahead of weather-related risks with our precise forecasting tools, enabling proactive decision-making for crop management.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Crop Yield Prediction</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Additional JavaScript functionality
+        // Add your custom JavaScript here
+        function changeHeroBackground() {
+            let images = ["img1.jpg", "img2.jpg", "img3.jpg"]; // List of image URLs
+            let randomIndex = Math.floor(Math.random() * images.length); // Randomly select an image
+            let imageUrl = images[randomIndex];
+            document.querySelector('.hero').style.backgroundImage = `url('${imageUrl}')`;
+        }
+    
+        // JavaScript for the solutions section
+        // Example: You can add a function to toggle visibility of a specific solution detail
+        function toggleSolutionDetail(solutionId) {
+            let solutionDetail = document.getElementById(solutionId);
+            if (solutionDetail.style.display === "none") {
+                solutionDetail.style.display = "block";
+            } else {
+                solutionDetail.style.display = "none";
+            }
+        }
+    
+        // JavaScript for the services section
+        // Example: You can add a function to display more details about a specific service when clicked
+        function showServiceDetails(serviceId) {
+            let serviceDetails = document.getElementById(serviceId);
+            serviceDetails.style.display = "block";
+        }
+    
+        // JavaScript for the login section
+        // Example: You can add a function to validate user input and authenticate the login
+        function loginUser() {
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            // Perform login validation here
+            if (username === "example" && password === "password") {
+                alert("Login successful!");
+                // Redirect to a new page or perform other actions
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
